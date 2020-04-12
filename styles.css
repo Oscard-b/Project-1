@@ -1,0 +1,41 @@
+body {
+    background-color: whitesmoke;
+}
+#headerImg {
+    filter: brightness(40%);
+    background-color: darkgrey;
+}
+.child-1 {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    color: white;
+}
+.child-2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.child-3 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+
+.spiritsNav {
+    margin: 1%;
+}
+#lvl2Dropdown {
+    text-align: center;
+    margin: 2%;
+}
+#lvl3Dropdown {
+    margin: 2%;
+}
