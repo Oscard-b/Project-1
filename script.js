@@ -34,13 +34,15 @@ $(document).ready(function () {
                 indexArray.push(x);
                 let randomDrink = data.drinks[x].strDrink;
                 
-                //console.log(randomDrink);
+                console.log(randomDrink);
 
                 //iterate over children
                 let childArray = $(".drink-list").children("div");
                 $(childArray[i]).text(randomDrink);
                 
             }
+
+            
 
 
             // let drinkImg = $("<img>").attr("src", data.drinks[x].strDrinkThumb + "/preview");
