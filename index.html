@@ -56,11 +56,11 @@
             <h1 id="x" class="level-item">Choose a spirit!</h1>
         </div>
         <div class="level">
-            <p id="x" class="title level-item">Whiskey</p>
-            <p id="x" class="title level-item">Tequila</p>
-            <p id="x" class="title level-item">Vodka</p>
-            <p id="x" class="title level-item">Rum</p>
-            <p id="x" class="title level-item">Moonshine</p>
+            <button value="gin" class="button level-item drink">Gin</button>
+            <button value="tequila" class="button level-item drink">Tequila</button>
+            <button value="vodka" class="button level-item drink">Vodka</button>
+            <button value="rum" class="button level-item drink">Rum</button>
+            <button value="brandy" class="button level-item drink">Brandy</button>
         </div>
     </div>
 
@@ -80,26 +80,26 @@
                 <article id="lvl2Dropdown" class="tile is-vertical box">
                     <p>Choose a drink!</p>
                     <div class="card-content">
-                        <div class="content field">
-                            <div class="button is-link is-fullwidth">
+                        <div class="drink-list content field">
+                            <button class="drinkChoice button is-link is-fullwidth">
                                 Drink 1
-                            </div>
+                            </button>
                             <br>
-                            <div class="button is-link is-fullwidth">
+                            <button class="drinkChoice button is-link is-fullwidth">
                                 Drink 2
-                            </div>
+                            </button>
                             <br>
-                            <div class="button is-link is-fullwidth">
+                            <button class="drinkChoice button is-link is-fullwidth">
                                 Drink 3
-                            </div>
+                            </button>
                             <br>
-                            <div class="button is-link is-fullwidth">
+                            <button class="drinkChoice button is-link is-fullwidth">
                                 Drink 4
-                            </div>
+                            </button>
                             <br>
-                            <div class="button is-link is-fullwidth">
+                            <button class="drinkChoice button is-link is-fullwidth">
                                 Drink 5
-                            </div>
+                            </button>
                         </div>
                     </div>
                     <footer class="card-footer">
@@ -149,7 +149,7 @@
                     <figure class="card">
                         <div class="card-image">
                             <div id="moviePoster" class="card-image">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                
                             </div>
                         </div>
 
@@ -157,15 +157,12 @@
                             <div class="media">
 
                                 <div class="media-content">
-                                    <p class="title is-4">(Drink Title)</p>
+                                    <p class="drinkTitle title is-4"></p>
                                 </div>
                             </div>
 
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris.
+                            <div id="drinkInstructions"></div>
+                            <div id="drinkIngredients"></div>
                             </div>
                         </div>
                     </figure>
