@@ -3,6 +3,15 @@ $(document).ready(function () {
 
 
 
+
+//var vodkaBtn = $('#vodka');
+//everything that happens when you click vodka or each spirt should happen here
+//including the api call for buttons buttons and appending them to the screen with drinks and appending them to the screewn and 5 movies
+//$('vodka').on("click", function(){
+/// run api call that matches this liqour for movie 
+/// decide what we are going to search by in the api call
+
+
 });
 
 const BASEURL = "http://www.omdbapi.com/?apikey="
@@ -17,7 +26,7 @@ function startMovieRequest(liquor, pageNum) {
         method: "GET",
         url: URL,
         dataType: "JSON",
-    })
+    }) 
         //executes when GET request is done
         //getting a movie array from the response object called Search
         .done(function (response) {
@@ -25,6 +34,21 @@ function startMovieRequest(liquor, pageNum) {
             renderMovies(movieArr);
         });
 }
+// make buttons
+$("button1").text(response.Search.Title[0]);
+
+//card
+//function to match each button with response, goes on card
+//$("button1").on("click", function(){
+//$("#title1").text(response.Search.Title[0]);
+//title that matches with button 1 to go in the card 
+//$("#year1").text(response.Search.Year[0])  
+//}
+
+
+
+  
+     
 // API page limit 1-100
 function getNumMoviePages(limit) {
     for (let index = 1; index < limit; index++) {
@@ -32,11 +56,11 @@ function getNumMoviePages(limit) {
     }
 }
 
-//a helper function a random index of the full movie array
+//random index of the full movie array
 function getRandomArrayIndex(arr) {
     return Math.floor(Math.random() * arr.length)
 }
-//Currenlty only passedin 10 length array
+//Currently only passed in 10 length array
 // need larger array of all movies from pages combined into one array
 function renderMovies(arr) {
     var selectedMovies = []
@@ -46,3 +70,4 @@ function renderMovies(arr) {
     }
 
 }
+//});
