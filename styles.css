@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 body {
     background-color: #610300;
 background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
@@ -87,3 +91,23 @@ box-shadow: -1px -10px 34px 20px rgba(0,0,0,0.79);
 	top:1px;
 }
 
+#tile1 {
+
+    margin-bottom: 0;
+}
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+
+.card {
+    width: 100%;
+}
+
+.movie-placeholder, .drink-placeholder {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
