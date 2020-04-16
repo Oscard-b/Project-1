@@ -8,9 +8,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 
 </head>
@@ -20,32 +21,12 @@
 
     <!--This is the header image-->
     <header class="parent">
-        <div id="headerImg">
-            <img src="./Assets/29-295645_filmstrip-png-image-with-film-reel.png" alt="Movie reel background">
+        
+        <br> <br> <br>
+        <div class="message" data-aos="flip-up" data-aos-duration="6000">
+            <h1>Choose a spirit!</h1>
         </div>
-            <div class="child child-1">
-                Cinema Spirits
-                <img src="" alt="Cinema Spirits logo">
-            </div>
-
-            <div class="child child-2">
-                <img src="" alt="Cinema Spirits logo">
-            </div>
-
-            <div class="child child-3">
-                <p>Welcome to Cinema Spirits!
-                    <br>
-                    <br>
-                    Choose a spirit you have at home from our options below to introduce yourself
-                    <br>
-                    to drinks and their recipes, and set the theme for your movie choices.
-                    <br>
-                    <br>
-                    Enjoy! </p>
-            </div>
     </header>
-
-
 
 
 
@@ -53,14 +34,14 @@
     <!--User chooses a spirit here-->
     <div class="spiritsNav">
         <div class="level">
-            <h1 id="x" class="level-item">Choose a spirit!</h1>
+            
         </div>
         <div class="level">
-            <button value="gin" class="button level-item drink">Gin</button>
-            <button value="tequila" class="button level-item drink">Tequila</button>
-            <button value="vodka" class="button level-item drink">Vodka</button>
-            <button value="rum" class="button level-item drink">Rum</button>
-            <button value="brandy" class="button level-item drink">Brandy</button>
+            <button value="gin" class="myButton level-item drink">Gin</button>
+            <button value="tequila" class="myButton level-item drink">Tequila</button>
+            <button value="vodka" class="myButton level-item drink">Vodka</button>
+            <button value="rum" class="myButton level-item drink">Rum</button>
+            <button value="brandy" class="myButton level-item drink">Brandy</button>
         </div>
     </div>
 
@@ -72,10 +53,29 @@
     <!--This is the section for all of the tiles-->
     <section id="tile1" class="tile is-ancestor level">
         <section class="tile is-10 is-vertical is-parent level-item">
+         
+            <section id="introTile" class="tile is-horizontal">
+                
 
+                <!--This is the movie dropdown-->
+                <article class="tile  box">
+                    <h3>Not sure what to watch? Not sure what to drink?</h3>
+                    <div class="card-content">
+                        <div class="content field">
+                            <p>1. Select a liquor you have around the house <br>
+                                2. Select a drink option. <br>
+                                3. Select a movie based on your liquor.
+                                
+                            </p>
+                        </div>
+                    </div>
+                    
+                </article>
+            </section>
 
 
             <section id="tile2" class="tile is-horizontal">
+                
                 <!--This is the drink card-->
                 <article id="lvl2Dropdown" class="tile is-vertical box">
                     <p>Choose a drink!</p>
@@ -102,40 +102,36 @@
                             </button>
                         </div>
                     </div>
-                    <footer class="card-footer">
-                        <a href="#" class="card-footer-item">Submit</a>
-                    </footer>
+                    
                 </article>
 
                 <!--This is the movie dropdown-->
                 <article id="lvl2Dropdown" class="tile is-vertical box">
                     <p>Choose a movie!</p>
                     <div class="card-content">
-                        <div class="content field">
-                            <div class="button is-link is-fullwidth">
+                        <div class="movie-list content field">
+                            <button class="button is-link is-fullwidth">
                                 Movie 1
-                            </div>
+                            </button>
                             <br>
-                            <div class="button is-link is-fullwidth">
+                            <button class="button is-link is-fullwidth">
                                 Movie 2
-                            </div>
+                            </button>
                             <br>
-                            <div class="button is-link is-fullwidth">
+                            <button class="button is-link is-fullwidth">
                                 Movie 3
-                            </div>
+                            </button>
                             <br>
-                            <div class="button is-link is-fullwidth">
+                            <button class="button is-link is-fullwidth">
                                 Movie 4
-                            </div>
+                            </button>
                             <br>
-                            <div class="button is-link is-fullwidth">
+                            <button class="button is-link is-fullwidth">
                                 Movie 5
-                            </div>
+                            </button>
                         </div>
                     </div>
-                    <footer class="card-footer">
-                        <a href="#" class="card-footer-item">Submit</a>
-                    </footer>
+                    
                 </article>
             </section>
 
@@ -149,11 +145,11 @@
                     <figure class="card">
                         <div class="card-image">
                             <div id="moviePoster" class="card-image">
-                                
+
                             </div>
                         </div>
 
-                        <div class="card-content">
+                        <div class="card-content" data-aos="fade-up">
                             <div class="media">
 
                                 <div class="media-content">
@@ -162,8 +158,9 @@
                             </div>
 
                             <div id="drinkInstructions"></div>
+                            <br>
                             <div id="drinkIngredients"></div>
-                            </div>
+                        </div>
                         </div>
                     </figure>
                 </article>
@@ -195,6 +192,7 @@
 
         </section>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 
 </html>
