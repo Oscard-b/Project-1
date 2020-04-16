@@ -8,6 +8,8 @@ $(document).ready(function () {
         
     });
 
+    
+
 
     // select a spirit
     $(".drink").on("click", function (e) {
@@ -19,7 +21,7 @@ $(document).ready(function () {
 
         let spirit = drinkChoice;
         getDrinks(spirit);
-        getMovies()
+        getMovies(spirit);
       
     });
 
@@ -96,7 +98,7 @@ function getDrinks(spirit) {
 
         });
 
-        // let drinkImg = $("<img>").attr("src", data.drinks[x].strDrinkThumb + "/preview");
+       
 
     });
 }
@@ -104,4 +106,35 @@ function getDrinks(spirit) {
 function getMovies(spirit){
 
 
-}
+    let movieURL = "https://api.themoviedb.org/3/search/movie?api_key=ac8d8df8618ce748ba6ec85b601a0f67&language=en-US&query=" + spirit + "&page=1&include_adult=false";
+    // *********** search movie by a keyword 
+    $.ajax({
+
+        url: movieURL,
+        method: "GET"
+
+    }).then(function (data) {
+       //console.log(data.results[0].title);
+
+        indexArray = [];
+
+            for (let i = 0; i < 5; i++) {
+
+                // Grab a random movie title from the query results
+                 let index = Math.floor(Math.random() * data.results.length);
+                 //if there is a duplicate, generate a new number
+                 while (indexArray.includes(index)) {
+
+                    index = Math.floor(Math.random() * data.results.length);
+                 };
+                 indexArray.push(index);
+                 // use the random index number to grab a random Movie out of array
+                 let randomMovie = data.results[index].title;
+
+                 let childArray = $(".movie-list").children("button");
+                 $(childArray[i]).text(randomMovie);
+            }
+
+    });
+
+};
