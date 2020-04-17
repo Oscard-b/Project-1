@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Monoton&family=Pacifico&family=Rancho&display=swap');
 
 
 body {
@@ -40,7 +39,7 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall.p
 #lvl2Dropdown {
     text-align: center;
     margin: 2%;
-    
+    opacity: .7;
 }
 #lvl3Dropdown {
     margin: 2%;
@@ -111,3 +110,28 @@ body {
     text-align: center;
     font-family: 'Pacifico', cursive;
 }
+
+#moviePoster {
+
+    text-align: center;
+}
+
+.drinkTitle, .movieTitle {
+
+    text-align: center;
+}
+
+p {
+
+font-family: 'Chicle', cursive;
+font-size: 30px;
+color: white;
+}
+
+#backcolor {
+
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.9150035014005602) 44%, rgba(116,105,21,1) 91%, rgba(167,130,21,0.9290091036414566) 99%);
+    
+}
+
