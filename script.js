@@ -3,6 +3,7 @@ $(document).ready(function () {
 
     AOS.init({
         duration: 3000
+        
     });
 
     // select a spirit
@@ -146,7 +147,7 @@ function getMovies(spirit) {
                 let movieImg = "";
                 if (data.poster_path === null) {
 
-                    movieImg = $("<img>").attr("src", "/Assets/no-image.jpg");
+                    movieImg = $("<img>").attr("src", "./Assets/no-image.jpg");
                     
                 }
                 else {
