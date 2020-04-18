@@ -9,6 +9,7 @@ $(document).ready(function () {
     // select a spirit
     $(".drink").on("click", function (e) {
         e.preventDefault();
+        //hide the intro text and show the buttons
         $("#introTile").hide()
         $("#tile2").show();
         // this keyword means the current element
@@ -37,10 +38,9 @@ function getDrinks(spirit) {
 
     }).then(function (data) {
         //console.log(data);
-        // console.log(data.drinks)
-        //console.log(data.drinks[5].idDrink);
+        
         indexArray = [];
-        // data.drinks
+        
         for (let i = 0; i < 5; i++) {
             //console.log(data.drinks.length);
             let index = Math.floor(Math.random() * data.drinks.length);
@@ -99,7 +99,7 @@ function getMovies(spirit) {
         method: "GET"
 
     }).then(function (data) {
-        //console.log(data.results[0].id);
+        //console.log(data);
 
         indexArray = [];
 
@@ -142,7 +142,7 @@ function getMovies(spirit) {
                 method: "GET"
 
             }).then(function (data) {
-                console.log(data);
+                //console.log(data);
 
                 let movieImg = "";
                 if (data.poster_path === null) {

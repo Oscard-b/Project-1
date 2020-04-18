@@ -5,32 +5,7 @@ body {
     background-color: #610300;
 background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
 }
-#headerImg {
-    filter: brightness(40%);
-    background-color: darkgrey;
-}
-.child-1 {
-    position: absolute;
-    top: 3%;
-    right: 3%;
-    color: white;
-}
-.child-2 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-.child-3 {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
+
 
 
 .spiritsNav {
@@ -43,11 +18,11 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall.p
 }
 #lvl3Dropdown {
     margin: 2%;
-    
+    opacity: .7;
 }
 
-.message {
-
+.name {
+    background-image: url("old.jpg");
     width: 300px;
     height: 100px;
     margin: auto;
@@ -55,16 +30,19 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall.p
     text-align: center;
     border: 100px;
     background-color: #FAD961;
-    background-image: linear-gradient(0deg, #FAD961 0%, #84481b 100%);
+    text-shadow:0px 0px 10px #ffffff;
     font-family:Impact;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 2em;
     font-weight: 1000;
     -webkit-box-shadow: -1px -10px 34px 20px rgba(0,0,0,0.79);
 -moz-box-shadow: -1px -10px 34px 20px rgba(0,0,0,0.79);
 box-shadow: -1px -10px 34px 20px rgba(0,0,0,0.79);
 }
+.name:hover {
 
+    text-shadow:0px 0px 50px #ffffff;
+}
 
 #tile1 {
 
@@ -125,7 +103,6 @@ button {
         font-weight:bold;
         padding:17px 50px;
         text-decoration:none;
-        text-shadow:0px 0px 0px #ffffff;
     }
 button:hover {
         text-shadow:0px 0px 30px #ffffff;
@@ -138,5 +115,8 @@ button:active {
 
     text-shadow:0px 0px 30px #ffffff;
 }
-    
+.main-buttons:hover {
+
+    text-shadow:0px 0px 15px #ffffff;
+}
     
