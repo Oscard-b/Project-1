@@ -6,8 +6,6 @@ body {
 background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
 }
 
-
-
 .spiritsNav {
     margin: 1%;
 }
@@ -36,8 +34,8 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall.p
     font-size: 2em;
     font-weight: 1000;
     -webkit-box-shadow: -1px -10px 34px 20px rgba(0,0,0,0.79);
--moz-box-shadow: -1px -10px 34px 20px rgba(0,0,0,0.79);
-box-shadow: -1px -10px 34px 20px rgba(0,0,0,0.79);
+    -moz-box-shadow: -1px -10px 34px 20px rgba(0,0,0,0.79);
+    box-shadow: -1px -10px 34px 20px rgba(0,0,0,0.79);
 }
 .name:hover {
 
