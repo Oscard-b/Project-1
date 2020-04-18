@@ -29,8 +29,6 @@
     </header>
 
 
-
-
     <!--User chooses a spirit here-->
     <div class="spiritsNav">
         <div class="level">
@@ -46,38 +44,29 @@
     </div>
 
 
-
-
-
-
     <!--This is the section for all of the tiles-->
-    <section id="tile1" class="tile is-ancestor level">
+    <main id="tile1" class="tile is-ancestor level">
         <section class="tile is-10 is-vertical is-parent level-item">
 
+
             <section id="introTile" class="tile is-horizontal">
-
-
                 <!--This is the movie dropdown-->
-                <article id="backcolor" class="tile  box">
-
+                <section id="backcolor" class="tile  box">
                     <div class="card-content">
                         <div class="content field" data-aos="fade-left">
                             <p>1. Select a liquor you have around the house <br>
                                 2. Select a drink option <br>
                                 3. Select a movie based on the theme of your drink
-
                             </p>
                         </div>
                     </div>
-
-                </article>
+                </section>
             </section>
 
 
             <section id="tile2" class="tile is-horizontal">
-
                 <!--Drink options-->
-                <article id="lvl2Dropdown" class="tile is-vertical box">
+                <section class="tile is-vertical box lvl2Dropdown">
                     <p style="color: black;">Choose a drink!</p>
                     <div class="card-content">
                         <div class="drink-list content field">
@@ -102,11 +91,9 @@
                             </button>
                         </div>
                     </div>
-
-                </article>
-
+                </section>
                 <!--Movie Options-->
-                <article id="lvl2Dropdown" class="tile is-vertical box">
+                <section class="tile is-vertical box lvl2Dropdown">
                     <p style="color: black;">Choose a movie!</p>
                     <div class="card-content">
                         <div class="movie-list content field">
@@ -131,24 +118,19 @@
                             </button>
                         </div>
                     </div>
-
-                </article>
+                </section>
             </section>
-
-
-
 
 
             <section id="tile3" class="tile is-horizontal">
                 <!--Drink Info-->
-                <article id="lvl3Dropdown" class="tile box">
+                <section class="tile box lvl3Dropdown">
                     <figure class="card">
                         <div class="card-image">
                             <div id="drinkPoster" class="card-image">
 
                             </div>
                         </div>
-
                         <div class="card-content" data-aos="fade-up">
                             <div class="drink-placeholder">select a drink</div>
                             <div class="media">
@@ -162,12 +144,11 @@
                             <br>
                             <div id="drinkIngredients"></div>
                         </div>
-                        </div>
                     </figure>
-                </article>
-
+                </section>
                 <!--Movie Info-->
-                <article id="lvl3Dropdown" class="tile box">
+
+                <section class="tile box lvl3Dropdown">
                     <figure class="card">
                         <div class="card-image">
                             <div id="moviePoster" class="card-image">
@@ -185,14 +166,12 @@
                             <div id="movieInfo"></div>
                         </div>
                     </figure>
-                </article>
+                </section>
             </section>
 
 
         </section>
-
-    </section>
-
+    </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 
