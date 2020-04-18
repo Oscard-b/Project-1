@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     AOS.init({
         duration: 3000
-        
+
     });
 
     // select a spirit
@@ -38,9 +38,9 @@ function getDrinks(spirit) {
 
     }).then(function (data) {
         //console.log(data);
-        
+
         indexArray = [];
-        
+
         for (let i = 0; i < 5; i++) {
             //console.log(data.drinks.length);
             let index = Math.floor(Math.random() * data.drinks.length);
@@ -148,7 +148,7 @@ function getMovies(spirit) {
                 if (data.poster_path === null) {
 
                     movieImg = $("<img>").attr("src", "./Assets/no-image.jpg");
-                    
+
                 }
                 else {
                     let moviePosterPath = "http://image.tmdb.org/t/p/w185/" + data.poster_path;
@@ -158,7 +158,7 @@ function getMovies(spirit) {
                 $("#moviePoster").empty().append(movieImg);
                 //add movie title
                 $(".movieTitle").text(data.original_title);
-                if(data.overview === "") {
+                if (data.overview === "") {
                     $("#movieInfo").text("Overview: No information available");
                 } else {
                     $("#movieInfo").text("Overview:" + data.overview);
