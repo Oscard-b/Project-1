@@ -2,6 +2,15 @@
 
 https://oscard-b.github.io/Project-1/
 
+Welcome to Cinema Spirits! :D
+
+Hope You enjoy your stay.
+
+
+
+
+Requirements: 
+
 ------------------------------------------------
 Project 1
 
