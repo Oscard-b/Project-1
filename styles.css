@@ -5,32 +5,7 @@ body {
     background-color: #610300;
 background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
 }
-#headerImg {
-    filter: brightness(40%);
-    background-color: darkgrey;
-}
-.child-1 {
-    position: absolute;
-    top: 3%;
-    right: 3%;
-    color: white;
-}
-.child-2 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-.child-3 {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
+
 
 
 .spiritsNav {
@@ -43,11 +18,11 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall.p
 }
 #lvl3Dropdown {
     margin: 2%;
-    
+    opacity: .7;
 }
 
-.message {
-
+.name {
+    background-image: url("old.jpg");
     width: 300px;
     height: 100px;
     margin: auto;
@@ -55,39 +30,18 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall.p
     text-align: center;
     border: 100px;
     background-color: #FAD961;
-    background-image: linear-gradient(0deg, #FAD961 0%, #84481b 100%);
+    text-shadow:0px 0px 10px #ffffff;
     font-family:Impact;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 2em;
     font-weight: 1000;
     -webkit-box-shadow: -1px -10px 34px 20px rgba(0,0,0,0.79);
 -moz-box-shadow: -1px -10px 34px 20px rgba(0,0,0,0.79);
 box-shadow: -1px -10px 34px 20px rgba(0,0,0,0.79);
 }
+.name:hover {
 
-.myButton {
-	box-shadow:inset 0px 1px 0px 0px #fff6af;
-	background:linear-gradient(to bottom, #ffeb66 5%, #6b5b41 100%);
-	background-color:#ffeb66;
-	border-radius:6px;
-	border:1px solid #7d6849;
-	display:inline-block;
-	cursor:pointer;
-	color:#333333;
-	font-family:Impact;
-	font-size:23px;
-	font-weight:bold;
-	padding:6px 29px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffed61;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #6b5b41 5%, #ffeb66 100%);
-	background-color:#6b5b41;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
+    text-shadow:0px 0px 50px #ffffff;
 }
 
 #tile1 {
@@ -135,3 +89,34 @@ color: white;
     
 }
 
+
+button {
+        box-shadow:inset 0px -6px 18px 3px #000000;
+        background-image: url("old.jpg");
+        border-radius:8px;
+        border:5px solid #030303;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Impact;
+        font-size:22px;
+        font-weight:bold;
+        padding:17px 50px;
+        text-decoration:none;
+    }
+button:hover {
+        text-shadow:0px 0px 30px #ffffff;
+    }
+button:active {
+        position:relative;
+        top:1px;
+    }
+.main-buttons {
+
+    text-shadow:0px 0px 30px #ffffff;
+}
+.main-buttons:hover {
+
+    text-shadow:0px 0px 15px #ffffff;
+}
+    

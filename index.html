@@ -19,11 +19,11 @@
 
 <body>
 
-    <!--This is the header image-->
+
     <header class="parent">
-        
+
         <br> <br> <br>
-        <div class="message" data-aos="flip-up" data-aos-duration="4000">
+        <div class="name" data-aos="flip-up" data-aos-duration="1000">
             <h1>CINEMA SPIRITS</h1>
         </div>
     </header>
@@ -34,14 +34,14 @@
     <!--User chooses a spirit here-->
     <div class="spiritsNav">
         <div class="level">
-            
+
         </div>
         <div class="level">
-            <button value="gin" class="myButton level-item drink">Gin</button>
-            <button value="tequila" class="myButton level-item drink">Tequila</button>
-            <button value="vodka" class="myButton level-item drink">Vodka</button>
-            <button value="rum" class="myButton level-item drink">Rum</button>
-            <button value="brandy" class="myButton level-item drink">Brandy</button>
+            <button value="gin" class="main-buttons level-item drink">Gin</button>
+            <button value="tequila" class="main-buttons level-item drink">Tequila</button>
+            <button value="vodka" class="main-buttons level-item drink">Vodka</button>
+            <button value="rum" class="main-buttons level-item drink">Rum</button>
+            <button value="brandy" class="main-buttons level-item drink">Brandy</button>
         </div>
     </div>
 
@@ -53,30 +53,30 @@
     <!--This is the section for all of the tiles-->
     <section id="tile1" class="tile is-ancestor level">
         <section class="tile is-10 is-vertical is-parent level-item">
-         
+
             <section id="introTile" class="tile is-horizontal">
-                
+
 
                 <!--This is the movie dropdown-->
                 <article id="backcolor" class="tile  box">
-                    
+
                     <div class="card-content">
                         <div class="content field" data-aos="fade-left">
                             <p>1. Select a liquor you have around the house <br>
-                                2. Select a drink option. <br>
-                                3. Select a movie based on the theme of your drink.
-                                
+                                2. Select a drink option <br>
+                                3. Select a movie based on the theme of your drink
+
                             </p>
                         </div>
                     </div>
-                    
+
                 </article>
             </section>
 
 
             <section id="tile2" class="tile is-horizontal">
-                
-                <!--This is the drink card-->
+
+                <!--Drink options-->
                 <article id="lvl2Dropdown" class="tile is-vertical box">
                     <p style="color: black;">Choose a drink!</p>
                     <div class="card-content">
@@ -102,10 +102,10 @@
                             </button>
                         </div>
                     </div>
-                    
+
                 </article>
 
-                
+                <!--Movie Options-->
                 <article id="lvl2Dropdown" class="tile is-vertical box">
                     <p style="color: black;">Choose a movie!</p>
                     <div class="card-content">
@@ -131,7 +131,7 @@
                             </button>
                         </div>
                     </div>
-                    
+
                 </article>
             </section>
 
@@ -140,7 +140,7 @@
 
 
             <section id="tile3" class="tile is-horizontal">
-                <!--This is the movie card-->
+                <!--Drink Info-->
                 <article id="lvl3Dropdown" class="tile box">
                     <figure class="card">
                         <div class="card-image">
@@ -166,7 +166,7 @@
                     </figure>
                 </article>
 
-                
+                <!--Movie Info-->
                 <article id="lvl3Dropdown" class="tile box">
                     <figure class="card">
                         <div class="card-image">
@@ -174,7 +174,7 @@
 
                             </div>
                         </div>
-                        <div class="card-content">
+                        <div class="card-content" data-aos="fade-up">
                             <div class="movie-placeholder">select a Movie</div>
                             <div class="media">
 
@@ -190,8 +190,9 @@
 
 
         </section>
-        <div id="footer"></div>
+
     </section>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 
